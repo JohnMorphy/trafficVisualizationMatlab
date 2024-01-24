@@ -1,7 +1,7 @@
 # Traffic visualizationn built in matlab
 
 
-Application features
+## Application features
 
 After starting the application, the user can choose one of three streets. After selecting the route, select the hourly interval and tickrate.
 
@@ -17,9 +17,9 @@ In case of errors when drawing shp files or downloading data, errors are display
 
 ![Przechwytywanie2](https://github.com/JohnMorphy/trafficVisualizationMatlab/assets/92916894/d8bba6dc-cab6-459c-848e-5c6e68fc7348)
 
-Code snippets
+## Code snippets
 
-Downloading data via API:
+### Downloading data via API:
 
 baseURL = 'https://data.transportation.gov/resource/8ect-6jqj.json';
           
@@ -39,7 +39,7 @@ baseURL = 'https://data.transportation.gov/resource/8ect-6jqj.json';
            % Counting unique cars
            countVehiclesURL  = [baseURL, '?$select=count(distinct vehicle_id)&', locationParam, '&', timeWhereClause];
 
-Plotting the road:
+### Plotting the road:
 
            shpFile = 'US-101.shp';      
            shpFile2 = 'us-101-camera-coverage.shp';
@@ -48,7 +48,7 @@ Plotting the road:
            lat = [shp.Y];
 	         plot(app.UIAxes, lon, lat, '-b', 'LineWidth', 1);
 
-Getting min and max global time (implementation for us-101):
+### Getting min and max global time (implementation for us-101):
 
           Items = ["7:50 - 8:05", "8:05 - 8:20", "8:20 - 8:35"];
           ItemsData = {
@@ -60,7 +60,7 @@ Getting min and max global time (implementation for us-101):
           app.chooseDate_DropDown.ItemsData = ItemsData;
 
 
-Used resources:
+## Used resources:
 
  - https://data.transportation.gov/Automobiles/Next-Generation-Simulation-NGSIM-Vehicle-Trajector/8ect-6jqj/about_data
    (data source)
