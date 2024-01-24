@@ -1,6 +1,8 @@
 # Traffic visualizationn built in matlab
 
 
+
+
 ## Application features
 
 After starting the application, the user can choose one of three streets. After selecting the route, select the hourly interval and tickrate.
@@ -16,6 +18,8 @@ The road and the fragment of the road observed by the camera are also drawn. The
 In case of errors when drawing shp files or downloading data, errors are displayed in the "error messages" section. The errors disappear when you click the "Generate Visualization" button again or change the value on the slider.
 
 ![Przechwytywanie2](https://github.com/JohnMorphy/trafficVisualizationMatlab/assets/92916894/d8bba6dc-cab6-459c-848e-5c6e68fc7348)
+
+
 
 ## Code snippets
 
@@ -58,6 +62,7 @@ baseURL = 'https://data.transportation.gov/resource/8ect-6jqj.json';
                    };
           app.chooseDate_DropDown.Items = Items;
           app.chooseDate_DropDown.ItemsData = ItemsData;
+
 
 
 ## Used resources:
